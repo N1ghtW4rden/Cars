@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.carswsr'
+    namespace 'com.example.cars'
     compileSdk 33
 
     defaultConfig {
@@ -26,6 +26,9 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
     }
     buildFeatures {
         viewBinding true
